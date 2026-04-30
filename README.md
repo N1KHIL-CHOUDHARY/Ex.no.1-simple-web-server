@@ -1,3 +1,5 @@
+## Name: Nikhil H
+## Reg : 212224040219
 
 ## Ex 01 -Simple Web Server using Spring Boot
 
@@ -41,7 +43,7 @@ Stop the Spring Boot server once testing is complete.
 
 
 ## Program 
-
+```
 simple-web-server/
 ├── src/
 │   └── main/
@@ -52,9 +54,9 @@ simple-web-server/
 │       └── resources/
 │           └── application.properties
 ├── pom.xml
-
+```
  ### Pom.xml
-
+``` xml
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
@@ -91,9 +93,9 @@ simple-web-server/
         </plugins>
     </build>
 </project>
-
+```
 ### DemoApplication.java
-
+```java
 package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
@@ -106,8 +108,9 @@ public class DemoApplication {
     }
 }
 
-
+```
 ### HelloController.java
+```java
 package com.example.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -122,14 +125,13 @@ public class HelloController {
     }
 }
 
-
+```
 ### application.properties:
+```
+ server.port=8080
+```
 
- server.port=8081
+### Output:
 
-
-
-
-Output:
-
+<img width="1919" height="967" alt="image" src="https://github.com/user-attachments/assets/94edca84-f1f1-44d7-a128-653e2bd38172" />
 
